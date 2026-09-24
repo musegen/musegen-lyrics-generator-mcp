@@ -22,7 +22,7 @@ There is nothing to install. Add this to your MCP client's config — for Claude
   "mcpServers": {
     "lyrics": {
       "command": "uvx",
-      "args": ["--from", "git+https://github.com/musegen/lyrics-mcp.git", "lyrics-mcp"],
+      "args": ["--from", "git+https://github.com/musegen/musegen-lyrics-generator-mcp.git", "lyrics-mcp"],
       "env": {
         "ANTHROPIC_API_KEY": "sk-ant-..."
       }
@@ -43,7 +43,7 @@ the environment your client launches from.
 **Installed on your PATH.** Python 3.10 or newer:
 
 ```bash
-pip install git+https://github.com/musegen/lyrics-mcp.git
+pip install git+https://github.com/musegen/musegen-lyrics-generator-mcp.git
 ```
 
 ```json
@@ -70,7 +70,7 @@ to the `lyrics-mcp` executable, or go back to `uvx`.
     "lyrics": {
       "command": "python",
       "args": ["-m", "lyrics_mcp.server"],
-      "cwd": "/path/to/lyrics-mcp",
+      "cwd": "/path/to/musegen-lyrics-generator-mcp",
       "env": { "PYTHONPATH": "src", "ANTHROPIC_API_KEY": "sk-ant-..." }
     }
   }
